@@ -6,13 +6,30 @@
     box-sizing: border-box;
 }
 
+
+
 body {
-     font-family: "Jersey 15", sans-serif;
+    font-family: "Jersey 15", sans-serif;
     color: #333;
     line-height: 1.6;
-    background:  #1A3442;
-background: linear-gradient(180deg,rgba(26, 52, 66, 1) 0%, rgba(44, 163, 163, 1) 50%, rgba(249, 243, 214, 1) 100%);
+    background: linear-gradient(270deg, #1A3442, #2CA3A3, #F9F3D6, #1A3442);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease-in-out infinite;
 }
+
+@keyframes gradientMove {
+  0% {
+    background-position: 30% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 30% 50%;
+  }
+}
+
+
 /* Navbar */
 nav {
     position: fixed;
