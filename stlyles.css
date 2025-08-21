@@ -99,9 +99,9 @@ nav ul li a:hover {
  margin: 20px auto; /* centraliza horizontalmente e dá margem vertical */
  padding: 0 20px; /* espaçamento interno nas laterais */
 }
-.album img {
+.container img {
      font-size: 16px;
- display: inline-block;
+ display: inline-flex;
  width: 380px;
  height: 300px;
  object-fit: cover; /* mantém proporção, corta o excesso */
@@ -113,4 +113,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: center;
     color: #333;
+}
+#albuns h3{
+  font-size: 26px;
 }
