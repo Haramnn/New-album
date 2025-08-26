@@ -46,7 +46,7 @@ nav {
 }
 
 nav.scrolled {
-    background: #c72222; /* verde Starbucks */
+    background: rgb(112, 225, 112); /* verde Starbucks */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 nav ul {
@@ -62,7 +62,7 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 header {
-    background: url('innerspeaker.jpg') 
+    background: url('/img/innerspeaker.jpg') 
     no-repeat center center/cover;
     height: 40vh;
     display: flex;
@@ -83,7 +83,7 @@ header h1 {
 }
 
 nav ul li a:hover {
-    color: #a3d2ca;
+    color: #333;
 }
 @keyframes fadeInBackground {
   from { opacity: 0; }
@@ -95,25 +95,36 @@ nav ul li a:hover {
   background-color: #006241 	#5F9EA0 	#98FB98;
 }
 .container {
- max-width: 1200px; /* limite máximo de largura */
- margin: 20px auto; /* centraliza horizontalmente e dá margem vertical */
- padding: 0 20px; /* espaçamento interno nas laterais */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* Alinha artistas em coluna */
+    gap: 32px;              /* Espaço entre artistas */
+    align-items: flex-start;
+}
+.container > div[id] { /* Cada artista */
+    display: flex;
+    flex-direction: row; /* Álbuns em linha */
+    gap: 24px;           /* Espaço entre álbuns */
+    align-items: flex-start;
 }
 .container img {
-     font-size: 16px;
- display: inline-flex;
- width: 380px;
- height: 300px;
- object-fit: cover; /* mantém proporção, corta o excesso */
- border-radius: 10px;
- box-shadow: 2px 2px 6px rgba(0, 0 , 0, 0.2);
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0 , 0, 0.2);
 }
-#albuns h2 {
+.container img:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+h2 {
+    margin-bottom: 16px;
     font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
     color: #333;
+    text-align: center;
 }
-#albuns h3{
-  font-size: 26px;
-}
+
