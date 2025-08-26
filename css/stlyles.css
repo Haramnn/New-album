@@ -96,7 +96,7 @@ nav ul li a:hover {
 }
 .container {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column; /* Alinha artistas em coluna */
