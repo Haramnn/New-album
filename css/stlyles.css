@@ -62,9 +62,12 @@ nav ul li a {
     font-weight: 6000;
     transition: color 0.3s ease;
 }
-header {
-    background: url('/img/innerspeaker.jpg') 
+#p{
+  background: url('/img/innerspeaker.jpg') 
     no-repeat center center/cover;
+}
+header {
+    background: transparent;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -132,5 +135,68 @@ h2 {
 }
 footer {
   text-align: center;
+}
+#faixas {
+    margin: 32px auto;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: flex-start; /* Alinha topo */
+    gap: 40px;               /* Espaço entre imagem e lista */
+    max-width: 900px;
+}
+
+#faixas img {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.15);
+    flex-shrink: 0; /* Mantém tamanho fixo */
+    margin: auto;
+}
+
+#faixas > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+#faixas h2 {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 18px;
+    color: #1A3442;
+}
+
+#faixas ol {
+    font-size: 20px;
+    padding-left: 24px;
+    line-height: 1.8;
+}
+#faixas ol li {
+    margin-bottom: 8px;
+}
+#sobre {
+    margin: 32px auto;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    max-width: 900px;
+}
+#sobre h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+    color: #1A3442;
+    text-align: center;
+}
+#sobre p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
 }
 
