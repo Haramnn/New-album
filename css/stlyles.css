@@ -62,10 +62,6 @@ nav ul li a {
     font-weight: 6000;
     transition: color 0.3s ease;
 }
-#p{
-  background: url('/img/innerspeaker.jpg') 
-    no-repeat center center/cover;
-}
 header {
     background: transparent;
     height: 40vh;
@@ -77,6 +73,10 @@ header {
     padding: 0 16px;
     padding-top: 60px; /* compensa altura da navbar */
     text-align: center;
+}
+header.fundo {
+  background: url('/img/innerspeaker.jpg') 
+    no-repeat center center/cover;
 }
 
 header h1 {
